@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+}
+/* scroll */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #858383;
+}
+::-webkit-scrollbar-thumb{
+    background: #0000006a;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #000000;
+}
+
+.home{
+    background-image: url("../img/cover4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    background-attachment: fixed;
+    /* padding: 60px 0; */
+    box-shadow: 1px 1px 5px red;
+}
+.divcover{
+    background-color: rgba(29, 21, 21, 0.646);
+    padding: 60px 0;
+    height: 81vh;
+}
+nav{
+    display: flex;
+    width: 80%;
+    /* padding: 50px; */
+    justify-content: space-between;
+    align-items: center;
+   
+    padding:8px 10%;
+    z-index: 2;
+    transition: background 0.2s ease-in-out;
+} 
+.scrolled {
+    position: fixed;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.LOGO h1{
+    color: beige;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 30px;
+
+}
+.LOGO span{
+    color: rgb(205, 57, 57);
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    transition: .5s;
+}
+
+.linkes a:hover{
+  color: brown;
+}
+.login {
+    background-color: brown;
+    border: .5px solid red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+.main {
+    text-align: center;
+    width: 100%;
+    /* padding: 50px; */
+}
+.main h2{
+    padding-top: 100px ;
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: rgb(205, 57, 57);
+
+}
+.main p {
+    padding: 30px 200px 150px;
+    font-size: 18px;
+    color: aliceblue;
+}
+.form{
+    width: 100%;
+    text-align: center;
+}
+.form input{
+    background-color: #8a18184b;
+    color: aliceblue;
+    border-radius: 8px;
+    width:300px  ;
+    height: 22px;
+    margin: 10px;
+    border: none;
+    padding: 10px ;
+}
+button{
+    background-color: brown;
+    border: .5px solid red;
+    /* height: 30px; */
+    padding: 12px;
+    color: #fff;
+    border-radius: 8px;
+    /* border: none; */
+}
+/* //////////////////////// */
+#data{
+    text-align: center;
+    color: rgb(205, 57, 57);
+    /* border: .5px solid red; */
+    padding: 8px;
+    border-radius: 5px;
+    display: none;
+}
+/* about as */
+.about{
+    width: 100%;
+    text-align: center;
+}
+.habout {
+    color:rgb(205, 57, 57);
+    width: 100%;
+    text-align: center;
+    /* padding: 32px; */
+}
+.habout h2{
+    padding: 32px 0px 0px;
+    font-weight: 600;
+    font-size: 32px;
+    
+    
+}
+.dataAbout{
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+}
+.dataAbout .img{
+     width: 300px;
+     /* height: 400px; */
+     padding: 40px 100px;
+     /* background-image: url("../img/food\ \(8\).jpeg");
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; */
+}
+.dataAbout .img img{
+    border-radius: 10px;
+}
+.dabout{
+    text-align: left;
+}
+.dabout h3{
+    padding: 8px;
+    color:rgb(205, 57, 57) ;
+    font-weight: 600;
+}
+.dabout p{
+    padding: 10px 10px 0px;
+}
+/* food */
+.food {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #68272730;
+    box-shadow: 1px -1px 5px red;
+
+}
+.food .headFood ,.cardsFood{
+    width: 80%;
+    padding: 0 10%;
+    text-align: center;
+}
+.food .headFood h2 ,.hdrink h2 ,.content h2{
+    color:rgb(205, 57, 57)  ;
+    padding: 8px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 32px;
+}
+.cardsFood{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #1a0e0e; */
+}
+.food .cardFood{
+    background-image: url("../img/food\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    width: 150px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+    transition: background-image 1s ease-in-out;
+    transition: 2s;
+}
+.food  .cardFood:hover{
+    background-image: url("../img/food\ \(5\).jpeg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+    /* width: 155px; */
+    /* background-attachment: fixed; */
+}
+.cardFood .colorcard{
+    width: 100%;
+    transition: 2s;
+    padding: 20px;
+}
+.cardFood .bgcolorCard{
+    border-radius: 10px;
+   background-color: #000000c5;
+}
+.food .cardImg{
+    text-align: right;
+
+}
+.food img {
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+    border-radius: 0 0 0 40%;
+}
+.food .cardFood .cardText{
+    text-align: left;
+    color: aliceblue;
+    padding: 4px;
+}
+.cardText h3{
+    padding: 8px 0;
+}
+.cardText a {
+    /* text-align: r; */
+    /* padding-left: -10px; */
+    color: rgb(146, 20, 20);
+    margin: 4px 0;
+    font-weight: 500;
+    transition: 1s;
+    padding: 4px 2px;
+    border-radius: 10px;
+}
+.cardText a:hover{
+   
+    letter-spacing: 1px;
+    background-color: rgba(240, 248, 255, 0.548);
+}
+/* drinks */
+.drink{
+   
+    background-image: url("../img/coverd.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    background-attachment: fixed;
+}
+.drink .hdrink {
+    width:40% ;
+}
+.drink .imgDrink img{
+    width: 40px;
+    height: 300px;
+    border-radius: 20px;
+    transition: width 2s;
+    filter: blur(1px);
+}
+.drink .imgDrink img:hover{
+    width: 180px;
+    filter: blur(0px);
+}
+.hdrink p{
+    padding: 20px;
+    font-size: 16px;
+}
+.coverDrink{
+    padding: 60px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000b6;
+}
+/* contact */
+.contact {
+    background-image: url("../img/Download\ premium\ vector\ of\ White\ and\ gray\ social\ media\ icons\ background\ vector\ by\ Ning\ about\ free\ chat\ background\,\ magnifying\ glass\,\ magnifying\,\ red\ blue\ white\,\ and\ wifi\ background\ 586259.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    background-attachment: fixed;
+}
+.contact .content{
+    width: 80%;
+    padding: 80px 10%;
+   background-color: #0000008c;
+}
+.userData {
+    padding: 10px 20px;
+}
+.userData *{
+    width: 150px;
+}
+.userData> *{
+    margin-top: 10px;
+    padding: 5px 10px;
+    /* color: aliceblue; */
+    width: 300px;
+    /* background-color: #0000002b; */
+}
+.userData input,.userData textarea{
+    border: none;
+    border-radius: 10px;
+    background-color: #8a18184b;
+    color: aliceblue;
+}
+footer >*{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+    background-color: #000000ee;
+    /* color: #fff; */
+}
+footer h3{
+    color: rgb(255,57,57);
+    padding: 10px;
+}
+footer h4,footer i{
+    color: rgb(183, 170, 170);
+    padding: 10px;
+    transition: 1s;
+}
+footer h4:hover,footer i:hover{
+    color: rgb(151, 46, 46);
+    padding: 10px;
+}
+
+/* animation 
+    .boxLeft {
+    position: relative;
+    animation: slideRightLeft 2s ease  ;
+    visibility: visible;
+}
+
+@keyframes slideRightLeft {
+    0% {
+        transform: translateX(-200px);
+        
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+.boxRight {
+    position: relative;
+    animation: slideRight 2s ease  ;
+    visibility: hidden;
+     animation-delay: initial;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(200px);
+        visibility: visible;
+        
+    }
+    100% {
+        transform: translateX(0); 
+        visibility: visible;
+        
+    }
+} */
